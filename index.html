@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа: JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Лабораторная работа</h1>
+        <p class="subtitle">JavaScript: взаимодействие с HTML</p>
+
+        <div class="tasks">
+            <!-- Задание 1: Возведение в степень -->
+            <div class="task">
+                <div class="task-header">
+                    <span class="task-number">1</span>
+                    <h2>Возведение в степень</h2>
+                </div>
+                <div class="task-body">
+                    <div class="inputs">
+                        <input type="number" id="powX" placeholder="Основание" value="2">
+                        <input type="number" id="powN" placeholder="Степень" value="5">
+                    </div>
+                    <button onclick="calculatePow()">Вычислить</button>
+                    <div class="result" id="powResult">32</div>
+                </div>
+            </div>
+
+            <!-- Задание 2: НОД -->
+            <div class="task">
+                <div class="task-header">
+                    <span class="task-number">2</span>
+                    <h2>Наибольший общий делитель</h2>
+                </div>
+                <div class="task-body">
+                    <div class="inputs">
+                        <input type="number" id="gcdA" placeholder="Число A" value="48">
+                        <input type="number" id="gcdB" placeholder="Число B" value="18">
+                    </div>
+                    <button onclick="calculateGcd()">Найти НОД</button>
+                    <div class="result" id="gcdResult">6</div>
+                </div>
+            </div>
+
+            <!-- Задание 3: Наименьшая цифра -->
+            <div class="task">
+                <div class="task-header">
+                    <span class="task-number">3</span>
+                    <h2>Наименьшая цифра</h2>
+                </div>
+                <div class="task-body">
+                    <div class="inputs">
+                        <input type="number" id="minDigitInput" placeholder="Введите число" value="51842">
+                    </div>
+                    <button onclick="calculateMinDigit()">Найти</button>
+                    <div class="result" id="minDigitResult">1</div>
+                </div>
+            </div>
+
+            <!-- Задание 4: Множественное число -->
+            <div class="task">
+                <div class="task-header">
+                    <span class="task-number">4</span>
+                    <h2>Множественное число</h2>
+                </div>
+                <div class="task-body">
+                    <div class="inputs">
+                        <input type="number" id="pluralInput" placeholder="Количество записей" value="101">
+                    </div>
+                    <button onclick="showPlural()">Сформировать</button>
+                    <div class="result" id="pluralResult">101 запись</div>
+                </div>
+            </div>
+
+            <!-- Задание 5: Числа Фибоначчи -->
+            <div class="task">
+                <div class="task-header">
+                    <span class="task-number">5</span>
+                    <h2>Числа Фибоначчи</h2>
+                </div>
+                <div class="task-body">
+                    <div class="inputs">
+                        <input type="number" id="fibInput" placeholder="Введите n" min="0" max="1000" value="10">
+                    </div>
+                    <button onclick="calculateFib()">Вычислить</button>
+                    <div class="result" id="fibResult">55</div>
+                    <small class="note">n ≤ 1000</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
